@@ -1,10 +1,12 @@
 ## Process this file with automake to produce Makefile.in
 ## Created by Anjuta
 
-SUBDIRS = libgraphics
-SUBDIRS += src po
-SUBDIRS += tests
-SUBDIRS += docs
+SUBDIRS = \
+    libgraphics \
+    src \
+    po \
+    tests \
+    docs/reference/libgraphics
 
 ganashdocdir = ${prefix}/doc/ganash
 ganashdoc_DATA = \

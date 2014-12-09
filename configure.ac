@@ -10,6 +10,7 @@ AM_INIT_AUTOMAKE([1.11])
 AM_SILENT_RULES([no])
 
 AC_PROG_CC
+AM_PROG_CC_C_O
 
 
 
@@ -58,6 +59,7 @@ AC_OUTPUT([
 Makefile
 libgraphics/Makefile
 src/Makefile
+po/Makefile.in
 tests/Makefile
 tests/libgraphics/Makefile
 docs/reference/libgraphics/Makefile
