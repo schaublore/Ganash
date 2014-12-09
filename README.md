@@ -9,21 +9,21 @@ The following are among those helper functions provided for ease of use: to_cont
 
 Major Objects :
 
-+----GraphicsPath
-+----GraphicsFill
-+----GraphicsStroke
-+----GraphicsPaint
+* GraphicsPath
+* GraphicsFill
+* GraphicsStroke
+* GraphicsPaint
 
 Source Object:
 
-+----GraphicsSource
-+----GraphicsSolid
-+----GraphicsGradient
-      +----GraphicsGradientLinear
-      +----GraphicsGradientRadial
-      +----GraphicsGradientMesh
+* GraphicsSource
+* GraphicsSolid
+* GraphicsGradient
+  * GraphicsGradientLinear
+  * GraphicsGradientRadial
+  * GraphicsGradientMesh
 
 Surface Object:
 
-+----GraphicsSurface
-+----GraphicsImage
+* GraphicsSurface
+* GraphicsImage
