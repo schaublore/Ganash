@@ -1,43 +1,5 @@
 Create GraphicsPaint @see GraphicsStroke
 
-// GraphicsIData
-GraphicsPath
-GraphicsFill
-GraphicsStroke
-GraphicsPaint
-
-// source
-GraphicsSolid
-GraphicsGradientLinear
-GraphicsGradientRadial
-GraphicsGradientMesh
-GraphicsImage
-GraphicsPattern
-
-
-
-The Graphics library is the drawing API that allows you to create vector graphics:
-lines, curves, shapes, fills, and gradients
-The Ganash.Display.Graphics package is the name of this functionality.
-
-Major class:
-GraphicsSurface
-GraphicsPattern
-GraphicsIData
-  + GraphicsPath
-  + +++++++++++++++++++++++
-  + GraphicsStrokeSolid
-  + GraphicsStrokeGradient
-  + GraphicsStrokePixmap
-  + GraphicsBeginStroke
-  + GraphicsEndStroke
-  + +++++++++++++++++++++++
-  + GraphicsFillSolid
-  + GraphicsFillGradient
-  + GraphicsFillPixmap
-  + GraphicsBeginFill
-  + GraphicsEndFill
-GraphicsContext
 
 Metre en place le Cache grace a GraphicsImage->pattern
 

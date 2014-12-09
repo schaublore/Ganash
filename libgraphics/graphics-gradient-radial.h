@@ -1,7 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * graphics-gradient-radial.h
- * Copyright (C) 2013 Ludovic Schaublore <schaublore@gmail.com>
+ * Copyright (C) 2014 #AUTHOR# #MAIL#
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -16,7 +16,6 @@
  * You should have received a copy of the GNU General Public License along
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 
 #ifndef __GRAPHICS_GRADIENT_RADIAL_H__
 #define __GRAPHICS_GRADIENT_RADIAL_H__

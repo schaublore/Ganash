@@ -1,6 +1,7 @@
+/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
 /*
  * graphics-painter-iface.h
- * Copyright (C) 2013 MY_NAME MY.NAME@CONTACT
+ * Copyright (C) 2014 #AUTHOR# #MAIL#
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
