@@ -32,9 +32,20 @@ dnl ***************************************************************************
 dnl Dependencies
 dnl ***************************************************************************
 
-dnl === Gtk ===================================================================
-PKG_CHECK_MODULES(GANASH, [gtk+-3.0 ])
+dnl === Program ===============================================================
+PKG_CHECK_MODULES(GTK, [gtk+-2.0])
 
+PKG_CHECK_MODULES(GOBJECT,gobject-2.0)
+
+PKG_CHECK_MODULES(CAIRO,cairo)
+
+PKG_CHECK_MODULES(CROCO, libcroco-0.6)
+
+PKG_CHECK_MODULES(XML, libxml-2.0)
+
+PKG_CHECK_MODULES(JS, [javascriptcoregtk-3.0])
+
+PKG_CHECK_MODULES(VTE, [vte])
 
 
 dnl ***************************************************************************
@@ -47,6 +58,7 @@ AC_OUTPUT([
 Makefile
 libgraphics/Makefile
 src/Makefile
-po/Makefile.in
 tests/Makefile
+tests/libgraphics/Makefile
+docs/reference/libgraphics/Makefile
 ])

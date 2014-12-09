@@ -4,6 +4,7 @@
 SUBDIRS = libgraphics
 SUBDIRS += src po
 SUBDIRS += tests
+SUBDIRS += docs
 
 ganashdocdir = ${prefix}/doc/ganash
 ganashdoc_DATA = \
