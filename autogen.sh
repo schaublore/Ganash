@@ -89,6 +89,37 @@ if test "$DIE" -eq 1; then
   exit 1
 fi
 
+
+# check if gtk-doc is explicitely enable
+for ag_option in $AUTOGEN_CONFIGURE_ARGS $@
+do
+  case $ag_option in
+    -enable-gtk-doc | --enable-gtk-doc)
+    enable_gtk_doc=yes
+  ;;
+  esac
+done
+
+if test x$enable_gtk_doc = xyes; then
+  echo -n "checking for gtkdocize ... "
+  if (gtkdocize --version) < /dev/null > /dev/null 2>&1; then
+      echo "yes"
+  else
+      echo
+      echo "  You must have gtk-doc installed to compile $PROJECT."
+      echo "  Install the appropriate package for your distribution,"
+      echo "  or get the source tarball at"
+      echo "  http://ftp.gnome.org/pub/GNOME/sources/gtk-doc/"
+      echo "  You can also use the option --disable-gtk-doc to skip"
+      echo "  this test but then you will not be able to generate a"
+      echo "  configure script that can build the API documentation."
+      DIE=1
+  fi
+else
+  echo "skipping test for gtkdocize"
+fi
+
+
 if test -z "$*"; then
   echo "**Warning**: I am going to run \`configure' with no arguments."
   echo "If you wish to pass any to it, please specify them on the"
@@ -134,6 +165,12 @@ do
 	  libtoolize --force --copy
 	fi
       fi
+
+      if test x$enable_gtk_doc = xyes; then
+        echo "Running gtkdocize..."
+        gtkdocize || exit $?
+      fi
+
       echo "Running aclocal $aclocalinclude ..."
       aclocal $aclocalinclude
       if grep "^A[CM]_CONFIG_HEADER" configure.ac >/dev/null; then
